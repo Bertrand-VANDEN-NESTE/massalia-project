@@ -1,0 +1,36 @@
+.navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navbar-collapse {
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.navbar-brand img {
+  width: 20%;
+}
+
+.navbar-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  color: #ec573a;
+  margin: auto;
+}

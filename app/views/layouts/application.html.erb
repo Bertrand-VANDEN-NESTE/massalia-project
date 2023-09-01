@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsIntro</title>
+    <title>Les saveurs de Massalia</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <!-- icon of massalia  -->
+    <%= favicon_link_tag "logo-massalia.jpg", rel: "icon", type: "images/png" %>
+    <!-- SCSS link -->
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+    <%= render "components/navbar" %>
     <%= yield %>
+    <%= render "components/footer" %>
   </body>
 </html>

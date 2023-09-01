@@ -1,0 +1,53 @@
+@import "components/navbar";
+@import "components/footer";
+@import "pages/home";
+
+/* Réinitialisation des marges et des remplissages */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Réinitialisation des styles de liste */
+ul, ol {
+  list-style: none;
+}
+
+/* Réinitialisation de la bordure */
+img, iframe, input, button {
+  border: none;
+}
+
+/* Réinitialisation de la mise en forme du texte */
+body, button, input, select, textarea {
+  font-family: Arial, sans-serif;
+}
+
+/* Réinitialisation des éléments de formulaire */
+button, input, select, textarea {
+  font-size: 100%; /* Réinitialisation de la taille de police */
+}
+
+/* Réinitialisation des styles de lien */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Réinitialisation des éléments en ligne */
+strong, em, abbr {
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Réinitialisation des éléments de titres */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em; /* Réinitialisation de la taille de police */
+  font-weight: normal;
+}
+
+/* Réinitialisation des éléments de formulaire pour éviter le changement de taille sur Firefox */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
