@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  # Generic syntax:
-  # verb "path", to: "controller#action"
+  #root on home page
   root to: "pages#home"
-  get "about", to: "pages#about"
-  get "contact", to: "pages#contact"
+
+  #different routes
   get "home", to: "pages#home"
+  get "contact", to: "pages#contact"
+  get "confiserie", to: "pages#confiserie"
+  get "contenant", to: "pages#contenant"
 end

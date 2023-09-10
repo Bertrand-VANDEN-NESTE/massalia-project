@@ -1,16 +1,22 @@
 <div class="navbar">
   <div class="container">
     <%= link_to "home", class: "navbar-brand" do %>
-      <%= image_tag "logo-massalia.jpg" %>
+      <%= image_tag "logos/SaMass-Full-Color.svg" %>
     <% end %>
     <div class="navbar-collapse">
       <ul class="navbar-nav">
-          <li class="nav-item">
-            <%= link_to "Nos collaborateurs", "about", class: "" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Nous contacter", "contact", class: "" %>
-          </li>
+        <li class="nav-item">
+          <%= link_to 'Accueil', 'home', class: 'bouton-survol', data: { image_src: image_path('logos/SaMass-Bonbon-Color-Solo-45.svg') } %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Confiseries', 'confiserie', class: 'bouton-survol', data: { image_src: image_path('logos/SaMass-Bonbon-Color-Solo-45.svg') } %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Contenants', 'contenant', class: 'bouton-survol', data: { image_src: image_path('logos/SaMass-Bonbon-Color-Solo-45.svg') } %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Contact', 'contact', class: 'bouton-survol', data: { image_src: image_path('logos/SaMass-Bonbon-Color-Solo-45.svg') } %>
+        </li>
       </ul>
     </div>
   </div>

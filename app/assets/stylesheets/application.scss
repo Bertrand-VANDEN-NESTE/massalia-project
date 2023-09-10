@@ -1,6 +1,10 @@
 @import "components/navbar";
 @import "components/footer";
 @import "pages/home";
+@import "pages/contact";
+@import "pages/confiserie";
+@import "pages/contenant";
+@import "variable";
 
 /* Réinitialisation des marges et des remplissages */
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
@@ -50,4 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
+}
+
+.container-blocks {
+  margin: 20px 80px;
 }

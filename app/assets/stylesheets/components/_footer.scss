@@ -1,5 +1,5 @@
 .footer {
-  background: #F4F4F4;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,6 +21,11 @@
 .footer-links a:hover {
   opacity: 1;
 }
-.footer .fa-heart {
-  color: #D23333;
+.footer span {
+  color: #ec573a;
+}
+
+.footer-copyright span {
+  font-size: small;
+  font-style: italic;
 }

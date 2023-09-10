@@ -1,0 +1,15 @@
+.container-gallery-candy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-candy {
+  width: 30%;
+}
+
+.img-candy {
+  width: 60%;
+}
+

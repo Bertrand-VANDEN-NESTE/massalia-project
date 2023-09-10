@@ -1,36 +1,78 @@
 .navbar {
   width: 100vw;
+  height: 56px;
   display: flex;
+  flex-grow: 2;
   justify-content: space-between;
   background: white;
 }
 
 .container {
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
+  align-items: center;
 }
 
 .navbar-collapse {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
   align-items: center;
-  width: 40%;
+}
+
+.navbar-brand {
+  width: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
-  justify-content: space-between;
 }
 
 .navbar-brand img {
-  width: 20%;
+  width: 56px;
 }
 
 .navbar-nav{
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+// hover img candy
+/* styles.scss */
+
 .nav-item {
+  position: relative;
   color: #ec573a;
   margin: auto;
+}
+
+.bouton-survol {
+  color: var(--base-color);
+  padding: 8px 24px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  cursor: pointer; /* Ajoutez un curseur pour indiquer qu'il s'agit d'un lien */
+}
+
+.bouton-survol:hover {
+  opacity: 1;
+}
+
+/* Conteneur de l'image */
+.img-preview-container {
+  position: relative;
+}
+
+/* Image qui apparaît au survol */
+.img-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* ou display: none; pour la cacher initialement */
+  transition: opacity 0.3s; /* Ajoute une transition pour une apparition en douceur */
 }
