@@ -2,8 +2,8 @@
 @import "components/footer";
 @import "pages/home";
 @import "pages/contact";
-@import "pages/confiserie";
-@import "pages/contenant";
+@import "pages/candy";
+@import "pages/container";
 @import "variable";
 
 /* Réinitialisation des marges et des remplissages */
@@ -57,5 +57,5 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .container-blocks {
-  margin: 20px 80px;
+  margin: 0px 80px;
 }

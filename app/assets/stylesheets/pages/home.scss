@@ -5,29 +5,52 @@
 }
 
 .container-image {
-  width: 50%;
+  width: 25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+
 .container-image img {
   margin: auto;
   width: 100%;
   text-align: center;
+  z-index: 10;
 }
 
 .container-text {
   width: 50%;
-
+  margin: auto;
 }
 
-.banner h1 {
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+.container-text h1 {
   font-weight: bold;
+  color: white;
+  text-transform: uppercase;
 }
 
-.banner p {
-  font-size: 20px;
+.container-text p {
   color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.background-img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.collab {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.collab-logos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   #different routes
   get "home", to: "pages#home"
   get "contact", to: "pages#contact"
-  get "confiserie", to: "pages#confiserie"
-  get "contenant", to: "pages#contenant"
+
+  resources :candys
+  resources :containers
 end

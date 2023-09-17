@@ -1,26 +1,27 @@
 <div class="container-blocks">
   <div class="banner">
     <div class="container-image">
-      <%= image_tag "coffret/boite-lsm-interieur.jpg" %>
+      <%= image_tag "coffret/boite-lsm-interieur.jpg", alt:"boite lsm", data_controller: 'image-changer' , data_target: 'image' %>
     </div>
     <div class="container-text">
       <h1>Les saveurs de Massalia</h1>
       <p>Colis Gastronomiques/Goûters de Noël/Objets Publicitaires/Cadeaux</p>
       <p>Bienvenue chez Massalia, une entreprise passionnée par la création de délicieux goûters artisanaux en partenariat avec des Établissements et Services d'Aide par le Travail (ESAT). Notre entreprise allie la gourmandise à l'inclusion sociale, offrant une expérience unique à nos clients tout en favorisant l'emploi des personnes en situation de handicap.</p>
     </div>
+    <%= image_tag "background/first-background.svg", class:"background-img" %>
   </div>
-  <div>
+  <div class="collab">
     <h2>Chez Massalia, nous croyons en la puissance de la diversité et de l'inclusion. C'est pourquoi nous avons établi des partenariats solides avec des ESAT locaux, qui sont des structures dédiées à l'accompagnement et à la formation professionnelle de personnes en situation de handicap. Grâce à ces partenariats, nous avons la chance de travailler avec des artisans talentueux qui apportent leur savoir-faire unique à la création de nos goûters exceptionnels.</h2>
-    <div>
-      <%= image_tag "logos/logo-ari.png" %>
-      <%= image_tag "logos/logo-sauvegarde13.jpg" %>
-      <%= image_tag "logos/logo-unapei.jpg" %>
+    <div class="collab-logos">
+      <%= image_tag "logos/logo_ari_1.png" %>
+      <%= image_tag "logos/logo_sauvegarde_13.png" %>
+      <%= image_tag "logos/logo_unapei_1.png" %>
     </div>
   </div>
   <div>
     <h2>Chaque fin d’année nous redistribuons gracieusement les confiseries invendues et en faisons don au Secours Populaire et divers Comités d’Entreprises qui peuvent ainsi organiser des loteries pour leur personnel.</h2>
     <div>
-      <%= image_tag "logos/logo-secourspopulaire.png" %>
+      <%= image_tag "logos/logo_secours_populaire.png" %>
     </div>
   </div>
 </div>

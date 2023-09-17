@@ -1,0 +1,14 @@
+.container-gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-container {
+  width: 30%;
+}
+
+.img-container {
+  width: 60%;
+}

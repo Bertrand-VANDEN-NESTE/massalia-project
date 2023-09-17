@@ -1,5 +1,14 @@
 {
+  "name": "massalia",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
     "stimulus": "^3.2.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }
