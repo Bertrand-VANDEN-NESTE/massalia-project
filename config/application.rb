@@ -33,5 +33,9 @@ module RailsIntro
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.assets.precompile += %w( application.js )
+    config.assets.precompile += %w( application.js carousel.js )
+
+
   end
 end

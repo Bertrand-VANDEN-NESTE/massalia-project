@@ -1,56 +1,242 @@
+@import "variable";
+
 .banner {
   display: flex;
+  width: 100vw;
   flex-direction: row;
   justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.container-image {
-  width: 25%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+// carousel CSS animation
+.carousel {
+  width: 50%;
+  position: relative;
 }
 
-.container-image img {
-  margin: auto;
+.carousel-container {
+  display: flex;
   width: 100%;
-  text-align: center;
-  z-index: 10;
+  margin: auto;
+  transition: transform 0.5s ease-in-out;
 }
 
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 50vh;
+  height: 50vh;
+  object-fit: contain;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.slide-out-right {
+  animation: slideOutRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    opacity: 1;
+  }
+
+  2% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+// container text CSS
 .container-text {
   width: 50%;
   margin: auto;
+  padding: 50px;
 }
 
 .container-text h1 {
-  font-weight: bold;
-  color: white;
+  font-size: 3rem;
+  color: $color-1;
   text-transform: uppercase;
+  text-align: center;
+  font-family: '  cursive';
+  font-family: 'Shantell Sans', 'cursive';
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .container-text p {
-  color: white;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.background-img {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
+  color: $color-5;
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Avenir', 'cursive';
 }
 
 .collab {
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
-  color: white;
+  position: relative;
+  background-color: $color-3;
+}
+
+.collab p {
+  color: $color-5;
+  width: 80vw;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Avenir', 'cursive';
+}
+
+.collab h2 {
+  font-size: 2rem;
+  color: $color-1;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Shantell Sans', 'cursive';
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .collab-logos {
   display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  justify-content: space-evenly;
+}
+
+.collab-logos img {
+  height: 20vh;
+  width: 20vh;
+  object-fit: contain;
+  padding: 10px;
+  background-color: $color-4;
+  border-radius: 25%;
+}
+
+.collab-populaire {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.collab-populaire img {
+  margin: auto;
+}
+
+.collab-populaire h2 {
+  font-size: 2rem;
+  color: $color-1;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Shantell Sans', 'cursive';
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.collab-populaire p {
+  width: 50%;
+  margin: auto;
+  font-family: 'Avenir', 'cursive';
+  text-align: center;
+  color: $color-5;
+}
+
+.background-img {
+  position: absolute;
   width: 100%;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  top :0;
+  left: 0;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .carousel {
+    width: 100vw;
+  }
+
+  .carousel-slide {
+    width: 100%;
+  }
+
+  .carousel-slide img {
+    height: 50vh;
+    width: 50vh;
+    object-fit: contain;
+  }
+
+  .container-text {
+    width: 80%;
+  }
+
+  .carousel-container {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    margin: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .collab p {
+    color: $color-5;
+    width: 80vw;
+    text-align: center;
+    font-family: 'Avenir', 'cursive';
+  }
+
+  .collab-logos img {
+    height: 10vh;
+    width: 10vh;
+    object-fit: contain;
+    padding: 10px;
+    background-color: $color-4;
+    border-radius: 25%;
+  }
+
+  .collab-logos {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
 }

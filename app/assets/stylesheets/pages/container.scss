@@ -1,14 +1,144 @@
+/* Styles pour container-container */
+.container-container {
+  display: flex;
+  flex-direction: unset;
+  text-align: center;
+  margin: 20px 20px 20px
+}
+
+/* Styles pour le formulaire de recherche */
+.search-form {
+  margin-bottom: 20px;
+}
+
+/* Styles pour le champ de recherche */
+.search-form input[type="text"] {
+  width: 150px;
+  color: $color-5;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Avenir', 'cursive';
+  border: 2px solid $color-3;
+  border-radius: 25px;
+}
+
+/* Styles pour le bouton de recherche */
+.search-form input[type="submit"] {
+  background-color: $color-1;
+  color: $color-4;
+  font-family: 'Avenir', 'cursive';
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn-filtre-container {
+  background-color: $color-4;
+  color: $color-5;
+  font-family: 'Avenir', 'cursive';
+  border-radius: 25px;
+  border: 1px solid $color-3;
+}
+
+/* Styles pour les boutons de filtre */
+.container-container label {
+  display: inline-block;
+  font-family: 'Avenir', 'cursive';
+  margin-right: 10px;
+  font-weight: bold;
+  color: $color-5;
+}
+
+/* Styles pour la galerie de conteneurs */
 .container-gallery-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  overflow: auto;
+  height: 100vh;
+  justify-content: space-around;
 }
 
 .gallery-container {
-  width: 30%;
+  width: 200px;
+  margin: 10px;
+  border: 1px solid $color-1;
+  border-radius: 25px;
+  text-align: center;
+  background-color: $color-4;
+}
+
+.container-size-img {
+  height: 200px;
+  margin-top: 20px;
+}
+
+.container-size-text {
+  height: auto;
 }
 
 .img-container {
-  width: 60%;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.text-container {
+  margin-top: 10px;
+}
+
+.span-container {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.span-container-name {
+  display: block;
+  font-size: 15pt;
+  font-family: 'Shantell Sans', 'cursive';
+  font-weight: bold;
+  color: $color-1;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.span-container-category {
+  display: block;
+  text-align: center;
+  font-size: 10pt;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.span-container-dim {
+  display: block;
+  text-align: center;
+  font-size: 10pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .container-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+}
+
+@media screen and (max-width: 489px) {
+
+  .search-form input[type="submit"] {
+    margin-top: 20px;
+  }
 }

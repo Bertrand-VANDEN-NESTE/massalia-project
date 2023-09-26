@@ -1,25 +1,31 @@
-<%= form_tag containers_path, method: :get, class: "search-form" do %>
-  <%= text_field_tag :search, params[:search], placeholder: "Rechercher un contenant" %>
-  <%= submit_tag "Rechercher", class: "btn btn-primary" %>
-<% end %>
-<%= form_tag containers_path, method: :get do %>
-  <% Container.distinct.pluck(:category).each do |category| %>
-    <label>
-      <%= radio_button_tag :category, category, params[:category] == category %>
-      <%= category %>
-    </label>
-  <% end %>
-  <%= submit_tag "Filtrer" %>
-<% end %>
-<div class="container-blocks container-gallery-container">
-  <% @containers.each do |container| %>
-    <div class="gallery-container">
-      <%= image_tag "contenants/#{container.img}", class: "img-container", alt:"#{container.tag}" %>
-      <div>
-        <span class="span-container"><%= container.name %></span>
-        <span class="span-container"><%= container.category %></span>
-        <span class="span-container"><%= container.dim %></span>
+<div class="container-container">
+  <div>
+    <%= form_tag containers_path, method: :get, class: "search-form" do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Rechercher un contenant" %>
+      <%= submit_tag "Rechercher", class: "btn btn-primary" %>
+    <% end %>
+    <%= form_tag containers_path, method: :get do %>
+      <% Container.distinct.pluck(:category).each do |category| %>
+        <label>
+          <%= radio_button_tag :category, category, params[:category] == category %>
+          <%= category %>
+        </label>
+      <% end %>
+      <%= submit_tag "Filtrer", class: "btn-filtre-container" %>
+    <% end %>
+  </div>
+  <div class="container-blocks container-gallery-container">
+    <% @containers.each do |container| %>
+      <div class="gallery-container">
+        <div class="container-size-img">
+          <%= image_tag "contenants/#{container.img}", class: "img-container", alt:"#{container.tag}" %>
+        </div>
+        <div class="container-size-text">
+          <span class="span-container-name"><%= container.name %></span>
+          <span class="span-container-category"><%= container.category %></span>
+          <span class="span-container-dim">Dimension : <%= container.dim %></span>
+        </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
