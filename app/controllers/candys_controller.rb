@@ -1,5 +1,6 @@
 class CandysController < ApplicationController
-
+  before_action :set_candy
+  
   def index
     if params[:search]
       @candys = Candy.where("name LIKE ?", "%#{params[:search]}%")
@@ -9,7 +10,7 @@ class CandysController < ApplicationController
 
     else
       @candys = Candy.all
-      
+
     end
   end
 end

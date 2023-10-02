@@ -1,4 +1,6 @@
 class ContainersController < ApplicationController
+  before_action :set_container
+
   def index
     if params[:search]
       @containers = Container.where("name LIKE ?", "%#{params[:search]}%")
@@ -9,4 +11,3 @@ class ContainersController < ApplicationController
     end
   end
 end
-
