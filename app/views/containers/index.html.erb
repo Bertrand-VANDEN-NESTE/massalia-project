@@ -1,21 +1,31 @@
 <div class="container-container">
-  <div>
+  <div class="form-container">
+    <%= image_tag "logos/SaMass-Full-Color.svg" %>
     <%= form_tag containers_path, method: :get, class: "search-form" do %>
       <%= text_field_tag :search, params[:search], placeholder: "Rechercher un contenant" %>
       <%= submit_tag "Rechercher", class: "btn btn-primary" %>
     <% end %>
-    <%= form_tag containers_path, method: :get do %>
-      <% Container.distinct.pluck(:category).each do |category| %>
-        <label>
-          <%= radio_button_tag :category, category, params[:category] == category %>
-          <%= category %>
-        </label>
-      <% end %>
-      <%= submit_tag "Filtrer", class: "btn-filtre-container" %>
+    <%= form_tag containers_path, class: "form-search-category", method: :get do %>
+      <div class="container-blocks container-gallery-form container-gallery-container">
+        <div class="mobile-dropdown">
+          <button id="categoryDropdown" class="btn-filtre-container">Catégorie</button>
+          <ul id="categoryOptions" class="category-options">
+            <% Container.distinct.pluck(:category).each do |category| %>
+              <li class="category-li">
+                <%= button_tag type: "button", class: "category-button", data: { category: category } do %>
+                  <%= category %>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+          <%= hidden_field_tag :category, params[:category] %>
+        </div>
+      </div>
     <% end %>
   </div>
   <div class="container-blocks container-gallery-container">
     <% @containers.each do |container| %>
+    <div>
       <div class="gallery-container">
         <div class="container-size-img">
           <%= image_tag "contenants/#{container.img}", class: "img-container", alt:"#{container.tag}" %>
@@ -26,6 +36,7 @@
           <span class="span-container-dim">Dimension : <%= container.dim %></span>
         </div>
       </div>
+    </div>
     <% end %>
   </div>
 </div>

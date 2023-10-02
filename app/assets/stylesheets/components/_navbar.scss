@@ -77,10 +77,6 @@
   text-align: center;
 }
 
-.logos-img {
-  width: 20%;
-}
-
 .burger-icon .bar {
   width: 25px;
   height: 3px;
@@ -96,13 +92,23 @@
         flex-direction: row;
         background-color: $color-3;
         position: absolute;
-        top: 56px;
+        top: 53px;
         left: 0;
         width: 100%;
         padding-bottom: 10px;
         padding-top: 10px;
         text-align: center;
         z-index: 1;
+    }
+
+    .nav-item {
+      margin: auto;
+      padding: 5px;
+      color: $color-1;
+      font-size: x-small;
+      text-transform: uppercase;
+      background-color: $color-4;
+      font-family: 'Shantell Sans', 'cursive';
     }
 
     .container {

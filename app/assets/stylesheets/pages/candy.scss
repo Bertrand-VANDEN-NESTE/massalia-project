@@ -1,114 +1,301 @@
-/* Styles pour container-candy */
+/* Styles pour container-container */
 .container-candy {
+  display: flex;
+  width: auto;
+  flex-direction: unset;
   text-align: center;
-  margin: 50px 200px 50px 200px;
-  padding: 20px;
+  height: 85vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
 }
 
 /* Styles pour le formulaire de recherche */
 .search-form {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
+}
+
+.form-container {
+  width: 20vw;
+}
+
+.form-candy img {
+  width: 8vw;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 /* Styles pour le champ de recherche */
 .search-form input[type="text"] {
-  width: 300px;
-  padding: 10px;
+  width: 14vw;
+  margin: auto;
+  color: $color-5;
+  padding: 8px;
+  font-size: x-small;
   font-family: 'Avenir', 'cursive';
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid $color-3;
+  border-radius: 25px;
 }
 
 /* Styles pour le bouton de recherche */
 .search-form input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
+  width: 14vw;
+  margin: auto;
+  background-color: $color-1;
+  color: $color-4;
   font-family: 'Avenir', 'cursive';
+  padding: 8px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
-/* Styles pour les boutons de filtre */
-.container-candy label {
-  display: inline-block;
-  margin-right: 10px;
-  color: $color-5;
-  font-family: 'Avenir', 'cursive';
-  font-weight: bold;
+.form-search-category{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
 }
 
-.btn-filtre-candy {
+.btn-filtre-container {
   background-color: $color-4;
+  width: 14vw;
+  margin: auto;
   color: $color-5;
   font-family: 'Avenir', 'cursive';
   border-radius: 25px;
   border: 1px solid $color-3;
 }
 
-/* Styles pour la galerie de confiseries */
-.container-gallery-candy {
+/* Styles pour les boutons de filtre */
+.category-button {
+  display: inline-block;
+  justify-content: center;
+  font-family: 'Avenir', 'cursive';
+  background-color: $color-4;
+  border: 1px solid $color-1;
+  padding: 3px;
+  width: 15vw;
+  border-radius: 25px;
+  font-size: x-small;
+  color: $color-1;
+}
+
+.container-gallery-form {
+  width: 20vw;
+}
+
+/* Styles pour la galerie de conteneurs */
+.container-gallery-container {
   display: flex;
   flex-wrap: wrap;
+  overflow: auto;
+  height: 85vh;
   justify-content: space-around;
 }
 
-.gallery-candy {
-  width: 200px;
+.gallery-container {
+  width: 25vw;
+  height: auto;
   margin: 10px;
+  border: 1px solid $color-1;
+  border-radius: 25px;
   text-align: center;
   background-color: $color-4;
-  border: 1px solid #ec571e;
-  border-radius: 25px;
+}
+.category-li-candy {
+  padding: 4px;
 }
 
-.candy-size-img {
-  height: 200px;
-}
-
-.candy-size-text {
-  height: auto;
-}
-
-.img-candy {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  border-radius: 50%;
+.container-size-img {
+  height: 15vh;
   margin-top: 20px;
 }
 
-.span-candy-name {
+.container-size-text {
+  height: auto;
+  color: $color-5;
+}
+
+.img-container {
+  height: 13vh;
+  width: 13vh;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.text-container {
+  margin-top: 10px;
+}
+
+.span-container {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.span-container-name {
   display: block;
   font-size: 15pt;
-  text-align: center;
   font-family: 'Shantell Sans', 'cursive';
-  color: $color-1;
   font-weight: bold;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.span-candy-category {
-  display: block;
-  font-size: 10pt;
+  color: $color-1;
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
+.span-container-category {
+  display: block;
+  text-align: center;
+  font-size: 10pt;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-@media screen and (max-width: 1000px) {
+.span-container-dim {
+  display: block;
+  text-align: center;
+  font-size: 10pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery-container {
+    width: 15vw;
+  }
+}
+@media screen and (max-width: 768px) {
+
+  .form-container {
+    width: 90vw;
+  }
 
   .container-candy {
+    flex-direction: column;
     text-align: center;
     margin: 0;
     padding: 20px;
+  }
+
+  .container-candy button {
+    margin: 2px;
+    width: auto;
+  }
+
+  .img-container {
+    height: 10vh;
+    width: 10vh;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  .container-size-img {
+    height: 10vh;
+    margin-top: 20px;
+  }
+
+  .category-li-candy {
+    padding: 4px;
+  }
+
+  .search-form {
+    margin-bottom: 2px;
+  }
+
+    /* Styles pour le champ de recherche */
+  .search-form input[type="text"] {
+    width: 80vw;
+    color: $color-5;
+    padding-top: 5px;
+    font-size: small;
+    font-family: 'Avenir', 'cursive';
+    border: 2px solid $color-3;
+    border-radius: 25px;
+  }
+
+  /* Styles pour le bouton de recherche */
+  .search-form input[type="submit"] {
+    background-color: $color-1;
+    width: 80vw;
+    color: $color-4;
+    font-family: 'Avenir', 'cursive';
+    padding-top: 5px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .form-search-category{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0;
+  }
+
+  .span-container-category {
+    display: block;
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .span-container-dim {
+    font-size: x-small;
+  }
+
+  .span-container-name {
+    font-size: smaller;
+
+  }
+
+  .container-gallery-container {
+    height: auto;
+    width: 90vw;
+  }
+
+  /* Masquer les boutons radio par défaut */
+  .category-options-candy {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85vw;
+  }
+
+  .gallery-container {
+    width: 30vw;
+    height: auto;
+  }
+
+  .category-label {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-color: $color-1;
+    color: $color-4;
+    border-radius: 25px;
+  }
+
+  /* Styles pour les étiquettes de catégorie survolées */
+  .category-label:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+  }
+
+  .form-candy img {
+    display: none;
   }
 
 }

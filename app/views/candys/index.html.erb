@@ -1,28 +1,41 @@
 <div class="container-candy">
-  <%= form_tag candys_path, method: :get, class: "search-form" do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Rechercher une confiseries" %>
-    <%= submit_tag "Rechercher", class: "btn btn-primary" %>
-  <% end %>
-  <%= form_tag candys_path, method: :get do %>
-    <% Candy.distinct.pluck(:category).each do |category| %>
-      <label>
-        <%= radio_button_tag :category, category, params[:category] == category %>
-        <%= category %>
-      </label>
+  <div class="form-candy">
+    <%= image_tag "logos/SaMass-Full-Color.svg" %>
+    <%= form_tag candys_path, method: :get, class: "search-form" do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Rechercher une confiserie" %>
+      <%= submit_tag "Rechercher", class: "btn btn-primary" %>
     <% end %>
-    <%= submit_tag "Filtrer", class: "btn-filtre-candy" %>
-  <% end %>
-  <div class="container-blocks container-gallery-candy">
-    <% @candys.each do |candy| %>
-      <div class="gallery-candy">
-        <div class="candy-size-img">
-          <%= image_tag "confiseries/#{candy.img}", class: "img-candy", alt:"#{candy.tag}" %>
-        </div>
-        <div class="candy-size-text">
-          <span class="span-candy-name"><%= candy.name %></span>
-          <span class="span-candy-category"><%= candy.category %></span>
+    <%= form_tag candys_path, class: "form-search-category", method: :get do %>
+      <div class="container-blocks container-gallery-form container-gallery-container">
+        <div class="mobile-dropdown">
+          <button id="categoryDropdown" class="btn-filtre-container">Catégorie</button>
+          <ul id="categoryOptions" class="category-options-candy">
+            <% Candy.distinct.pluck(:category).each do |category| %>
+              <li class="category-li-candy">
+                <%= button_tag type: "button", class: "category-button", data: { category: category } do %>
+                  <%= category %>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+          <%= hidden_field_tag :category, params[:category] %>
         </div>
       </div>
+    <% end %>
+  </div>
+  <div class="container-blocks container-gallery-container">
+    <% @candys.each do |candy| %>
+    <div>
+      <div class="gallery-container">
+        <div class="container-size-img">
+          <%= image_tag "confiseries/#{candy.img}", class: "img-container", alt:"#{candy.tag}" %>
+        </div>
+        <div class="container-size-text">
+          <span class="span-container-name"><%= candy.name %></span>
+          <span class="span-container-category"><%= candy.category %></span>
+        </div>
+      </div>
+    </div>
     <% end %>
   </div>
 </div>
