@@ -5,4 +5,10 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def candys
+  end
+
+  def containers
+  end
 end
