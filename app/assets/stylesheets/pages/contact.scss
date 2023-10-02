@@ -1,5 +1,5 @@
 .container-blocks-contact{
-  height: 82vh;
+  height: auto;
 }
 
 .block-contact {
@@ -30,6 +30,8 @@
 }
 
 .vignette-text{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: $color-5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,7 +46,7 @@
   padding: 20px;
 }
 
-.vignette-logo-mobile {
+.vignette-logo-mobile {
   display: none;
 }
 
@@ -55,29 +57,40 @@
 }
 
 .vignette-profil span{
-  padding: 30px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .text-contact {
-  margin: 30px;
+  margin: 20px;
   text-align: center;
 }
 
-.text-contact p {
+.text-contact span {
   width: 60vw;
+  margin: auto;
+  color: $color-5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  font-style: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
 .btn-mail {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .btn-mail a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: $color-1;
   padding: 10px;
+  font-style: bold;
   color: $color-4;
   border-radius: 25px;
   border: 1px solid $color-4;

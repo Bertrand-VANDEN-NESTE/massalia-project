@@ -80,22 +80,27 @@
 // container text CSS
 .container-text {
   width: 50%;
+  text-align: center;
   margin: auto;
   padding: 50px;
 }
 
+.logo {
+  width: 20vw;
+  margin: auto;
+}
+
 .container-text h1 {
-  font-size: 3rem;
+  font-size: 1.3rem;
   color: $color-1;
   text-transform: uppercase;
   text-align: center;
-  font-family: '  cursive';
-  font-family: 'Shantell Sans', 'cursive';
+  font-family: $font-1;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.container-text p {
+.container-text h2 {
   color: $color-5;
   padding-top: 10px;
   text-align: center;
@@ -125,7 +130,7 @@
   color: $color-1;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Shantell Sans', 'cursive';
+  font-family: $font-1;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -163,7 +168,7 @@
   color: $color-1;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Shantell Sans', 'cursive';
+  font-family: $font-1;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -208,8 +213,14 @@
 
   .container-text {
     width: 80vw;
+    text-align: center;
     margin: auto;
     padding: 0;
+  }
+
+  .logo {
+    width: 20vw;
+    margin: auto;
   }
 
   .carousel-container {
