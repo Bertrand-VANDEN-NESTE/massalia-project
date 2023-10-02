@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get "home", to: "pages#home"
   get "contact", to: "pages#contact"
 
-  resources :candys
-  resources :containers
+  resources :candys, only: :show
+  resources :containers, only: :show
 end
