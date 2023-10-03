@@ -1,9 +1,9 @@
-puts "Cleaning database..."
+puts 'Cleaning database...'
 
 Candy.destroy_all
 Container.destroy_all
 
-puts "Creating events, users, categories, chatrooms, etc."
+puts 'Creating candys and containers'
 
 candy_1 = Candy.create(name: "Père Noël Riegelein 40gr", category: "Chocolats saisonniers", img: "pere-noel-riegelein-40-gr.png", tag: "père noël riegelein 40gr")
 candy_1.save
@@ -157,8 +157,6 @@ candy_49.save
 
 candy_50 = Candy.create(name: "Boule bleue chocolat noir Stracciatella 13gr", category: "Confiseries chocolatées", img: "boule-bleue-choclat-noir-stracciatella-13gr.png", tag: "boule bleue choclat noir stracciatella 13gr")
 candy_50.save
-
-
 
 # boule-bleue-choclat-noir-stracciatella-13gr.png
 # boule-chocolat-fairtrade-reigelein-6,5gr.png
@@ -382,7 +380,7 @@ container_22.save
 container_23 = Container.create(name: "Boite voiture", category: "Boites métal", img: "boite-voiture.png", tag: "boite voiture", dim:"D15x9.5x10cm")
 container_23.save
 
-container_24 = Container.create(name: "Botte lin 2 décors", category: "0 à 3 ans", img: "botte-lin-2-decors.png", tag: "botte lin 2 decors", dim:"45cm")
+container_24 = Container.create(name: "Botte lin 2 décors", category: "0 à 3 ans", img: 'botte-lin-2-decors.png', tag: 'botte lin 2 decors', dim:"45cm")
 container_24.save
 
 container_25 = Container.create(name: "Botte style lin gris", category: "0 à 3 ans", img: "botte-style-lin-gris.png", tag: "botte style lin gris", dim:"45cm")
@@ -476,6 +474,6 @@ container_54 = Container.create(name: "Valisette métal Noël", category: "Sache
 container_54.save
 
 
-puts "categories successfully created!"
+puts "Categories successfully created!"
 
 puts "Finished!!"

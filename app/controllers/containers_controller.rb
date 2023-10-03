@@ -1,5 +1,4 @@
 class ContainersController < ApplicationController
-  before_action :set_container
 
   def index
     if params[:search]
