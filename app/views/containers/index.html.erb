@@ -6,9 +6,9 @@
       <%= submit_tag "Rechercher", class: "btn btn-primary" %>
     <% end %>
     <%= form_tag containers_path, class: "form-search-category", method: :get do %>
-      <div class="container-blocks container-gallery-form container-gallery-container">
+      <div class="container-gallery-form">
         <div class="mobile-dropdown">
-          <button id="categoryDropdown" class="btn-filtre-container">Catégorie</button>
+          <button id="categoryDropdown" class="btn-filtre-container">Catégories</button>
           <ul id="categoryOptions" class="category-options">
             <% Container.distinct.pluck(:category).each do |category| %>
               <li class="category-li">
@@ -23,9 +23,9 @@
       </div>
     <% end %>
   </div>
-  <div class="container-blocks container-gallery-container">
+  <div class="container-gallery-container">
     <% @containers.each do |container| %>
-    <div>
+    <div class="cards-gallery-container">
       <div class="gallery-container">
         <div class="container-size-img">
           <%= image_tag "contenants/#{container.img}", class: "img-container", alt:"#{container.tag}" %>

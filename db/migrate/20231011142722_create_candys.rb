@@ -1,11 +1,12 @@
-class CreateContainers < ActiveRecord::Migration[7.0]
+class CreateCandys < ActiveRecord::Migration[7.0]
   def change
-    create_table :containers do |t|
+    create_table :candys do |t|
       t.string :name
       t.string :category
       t.string :img
       t.string :tag
-      t.string :dim
+      t.string :unity
+      t.string :newproduct
 
       t.timestamps
     end

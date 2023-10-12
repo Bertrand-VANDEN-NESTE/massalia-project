@@ -1,106 +1,108 @@
 .container-blocks-contact{
   height: auto;
-}
 
-.block-contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
+  .block-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin: auto;
 
-.vignette-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: 20px;
-  width: 15vw;
-}
+    .vignette-logo-mobile {
+      display: none;
+      position: absolute;
+    }
 
-.vignette-profil {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  margin-top: 50px;
-  width: 20vw;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    .vignette-profil {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      margin-top: 50px;
+      width: 20vw;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-.vignette-text{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: $color-5;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+      .background-vignette-profil{
+        backdrop-filter: blur(10px);
+        border-radius: 10px 10px 0px 0px;
+        background-color: $color-3;
 
-.avatar-large {
-  width: 10vw;
-  height: 10vw;
-  margin: auto;
-  object-fit: cover;
-  border-radius: 50%;
-  padding: 20px;
-}
+        .avatar-large {
+          width: 10vw;
+          height: 10vw;
+          margin: auto;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 2px solid $color-1;
+        }
+      }
+    }
 
-.vignette-logo-mobile {
-  display: none;
-}
+    .vignette-text {
+      font-family: $font-2;
+      color: $color-5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
 
-.background-vignette-profil{
-  backdrop-filter: blur(10px);
-  border-radius: 10px 10px 0px 0px;
-  background-color: $color-3;
-}
+      span{
+        margin: 10px;
+        padding: 10px;
+      }
+    }
 
-.vignette-profil span{
-  margin: 10px;
-  padding: 10px;
-}
+    .vignette-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin: 20px;
+      width: 15vw;
+    }
+  }
 
-.text-contact {
-  margin: 20px;
-  text-align: center;
-}
+  .text-contact {
+    margin: 20px;
+    text-align: center;
 
-.text-contact span {
-  width: 60vw;
-  margin: auto;
-  color: $color-5;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2rem;
-  font-style: bold;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
+    span {
+      width: 60vw;
+      margin: auto;
+      color: $color-5;
+      font-family: $font-2;
+      font-size: 2rem;
+      font-style: bold;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
 
-.btn-mail {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-}
+    .btn-mail {
+      padding: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
 
-.btn-mail a {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: $color-1;
-  padding: 10px;
-  font-style: bold;
-  color: $color-4;
-  border-radius: 25px;
-  border: 1px solid $color-4;
+      a {
+        font-family: $font-2;
+        background-color: $color-1;
+        padding: 10px;
+        font-style: bold;
+        color: $color-4;
+        border-radius: 25px;
+        border: 1px solid $color-4;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   .block-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column !important;
   }
 
   .container-blocks-contact{

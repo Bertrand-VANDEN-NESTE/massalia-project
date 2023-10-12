@@ -1,14 +1,14 @@
 <div class="container-candy">
   <div class="form-candy">
     <%= image_tag "logos/SaMass-Full-Color.svg" %>
-    <%= form_tag candys_path, method: :get, class: "search-form" do %>
+    <%= form_tag candys_path, method: :get, class: "search-form-candy" do %>
       <%= text_field_tag :search, params[:search], placeholder: "Rechercher une confiserie" %>
-      <%= submit_tag "Rechercher", class: "btn btn-primary" %>
+      <%= submit_tag "Rechercher" %>
     <% end %>
     <%= form_tag candys_path, class: "form-search-category", method: :get do %>
-      <div class="container-blocks container-gallery-form container-gallery-container">
+      <div class="container-gallery-form">
         <div class="mobile-dropdown">
-          <button id="categoryDropdown" class="btn-filtre-container">Catégorie</button>
+          <button id="categoryDropdown" class="btn-filtre-container">Catégories</button>
           <ul id="categoryOptions" class="category-options-candy">
             <% Candy.distinct.pluck(:category).each do |category| %>
               <li class="category-li-candy">
@@ -23,16 +23,17 @@
       </div>
     <% end %>
   </div>
-  <div class="container-blocks container-gallery-container">
+  <div class="container-gallery-candys">
     <% @candys.each do |candy| %>
-    <div>
-      <div class="gallery-container">
+    <div class="cards-gallery-candys">
+      <div class="gallery-candys">
         <div class="container-size-img">
-          <%= image_tag "confiseries/#{candy.img}", class: "img-container", alt:"#{candy.tag}" %>
+          <%= image_tag "confiseries/#{candy.img}", class: "img-candy", alt:"#{candy.tag}" %>
         </div>
         <div class="container-size-text">
-          <span class="span-container-name"><%= candy.name %></span>
-          <span class="span-container-category"><%= candy.category %></span>
+          <span class="span-candy-name"><%= candy.name %></span>
+          <span class="span-candy-category"><%= candy.category %></span>
+          <span class="span-candy-unity">Unité: <%= candy.unity %></span>
         </div>
       </div>
     </div>
