@@ -51,7 +51,7 @@ candy_14.save
 candy_15 = Candy.create(name: "Barre Crunchy", category: "Barres chocolatées", img: "barre-crunchys-40gr.png", tag: "barre crunchy", unity:"40gr", newproduct:"false")
 candy_15.save
 
-candy_16 = Candy.create(name: "Barre de céréales chocolat", category: "Biscuits - Viennoiseries - Pompote", img: "barre-crunchy-40gr.png", tag: "barre crunchy", unity:"40gr", newproduct:"false")
+candy_16 = Candy.create(name: "Barre de céréales chocolat", category: "Biscuits - Viennoiseries - Pompote", img: "barre-crunchys-40gr.png", tag: "barre crunchy", unity:"40gr", newproduct:"false")
 candy_16.save
 
 candy_17 = Candy.create(name: "Barre de nougat tendre", category: "Confiseries fantaisies", img: "barre-de-nougat-tendre-20gr.png", tag: "barre de nougat tendre", unity:"20gr", newproduct:"false")
