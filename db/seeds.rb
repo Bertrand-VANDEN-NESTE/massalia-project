@@ -143,7 +143,7 @@ candy_44.save
 candy_45 = Candy.create(name: "Bouchée or chocolat lait croustillant", category: "Confiseries chocolatées", img: "bouchee-or-chocolat-lait-croustillant-11gr.png", tag: "bouchee or chocolat lait croustillant", unity:"11gr", newproduct:"false")
 candy_45.save
 
-candy_46 = Candy.create(name: "Bouchée orange crème brulée", category: "Confiseries chocolatées", img: "bouchee-orange-creme-brulee-11gr.png", tag: "bouchee orange creme brulee", unity:"11gr", newproduct:"false")
+candy_46 = Candy.create(name: "Bouchée orange crème brulée", category: "Confiseries chocolatées", img: "bouche-orange-creme-brule-11gr.png", tag: "bouchee orange creme brulee", unity:"11gr", newproduct:"false")
 candy_46.save
 
 candy_47 = Candy.create(name: "Bouchée Snickers", category: "Confiseries chocolatées", img: "bouchee-snickers-10-2gr.png", tag: "bouchee snickers", unity:"10.2gr", newproduct:"false")
