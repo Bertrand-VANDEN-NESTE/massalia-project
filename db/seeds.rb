@@ -44,7 +44,7 @@ candy_12.save
 candy_13 = Candy.create(name: "Assortiment friture noir lait reveillon", category: "Confiseries et emballages de pâques", img: "assortiment-friture-noir-lait-reveillon-190gr.png", tag: "assortiment friture noir lait reveillon", unity:"190gr", newproduct:"false")
 candy_13.save
 
-candy_14 = Candy.create(name: "Barre céréales grany lu", category: "Barres chocolatées", img: "barre-cereales-grany-lu-21gr.png", tag: "barre cereales grany lu", unity:"21gr", newproduct:"false")
+candy_14 = Candy.create(name: "Barre céréales grany lu", category: "Barres chocolatées", img: "barre-cereale-grany-lu-21gr.png", tag: "barre cereales grany lu", unity:"21gr", newproduct:"false")
 candy_14.save
 
 candy_15 = Candy.create(name: "Barre Crunchy", category: "Barres chocolatées", img: "barre-crunchy-40gr.png", tag: "barre crunchy", unity:"40gr", newproduct:"false")
