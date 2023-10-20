@@ -32,7 +32,7 @@ candy_8.save
 candy_9 = Candy.create(name: "2 galettes bretonnes pur beurre kercadelac", category: "Biscuits - Viennoiseries", img: "2-galettes-bretonnes-pur-beurre-kercadelac-15gr.png", tag: "2 galettes bretonnes pur beurre kercadelac", unity:"15gr", newproduct:"false")
 candy_9.save
 
-candy_10 = Candy.create(name: "2 p'tits croquants x2 kercadelac", category: "Biscuits - Viennoiseries", img: "2-p'tits-croquants-x2-kercadelac-15gr.png", tag: "2 p'tits croquants x2 kercadelac", unity:"15gr", newproduct:"false")
+candy_10 = Candy.create(name: "2 p'tits croquants x2 kercadelac", category: "Biscuits - Viennoiseries", img: "2-ptits-croquants-x2-kercadelac-15gr.png", tag: "2 p'tits croquants x2 kercadelac", unity:"15gr", newproduct:"false")
 candy_10.save
 
 candy_11 = Candy.create(name: "4 Oeufs Kinder surprises", category: "Confiseries et emballages de pâques", img: "4-oeufs-kinder-surprises-80gr.png", tag: "4 oeufs kinder surprises", unity:"80gr", newproduct:"false")
@@ -159,16 +159,16 @@ candy_50 = Candy.create(name: "Boule bleue chocolat noir Stracciatella", categor
 candy_50.save
 
 # boule-bleue-choclat-noir-stracciatella-13gr.png
-# boule-chocolat-fairtrade-reigelein-6,5gr.png
+# boule-chocolat-fairtrade-reigelein-6-5gr.png
 # boule-coco-sous-cello-11gr.png
 # boule-lindor-lait-12-gr.png
 # boule-orange-chocolat-ee-speculos-13gr.png
-# briquette-jus-de-pomme-100%-bio-sill-20cl.png
+# briquette-jus-de-pomme-100-bio-sill-20cl.png
 # briquette-jus-de-pomme-concentre-20cl.png
 # briquette-jus-orange-concentre-20cl.png
-# briquette-pur-jus-de-fruits-100%-orange-20cl.png
-# briquette-pur-jus-de-fruits-100%-orange-bio-20cl.png
-# briquette-pur-jus-de-fruits-100%-pomme-20cl.png
+# briquette-pur-jus-de-fruits-100-orange-20cl.png
+# briquette-pur-jus-de-fruits-100-orange-bio-20cl.png
+# briquette-pur-jus-de-fruits-100-pomme-20cl.png
 # briquette-rauch-orange-jus-de-fruits-20cl.png
 # brownie-en-barre-50gr.png
 # brownie-pepites-chocolat-kercadelac-30gr.png
@@ -198,8 +198,8 @@ candy_50.save
 # etui-pepites-acides-16gr.png
 # figurunes-chocolat-lait-5gr.png
 # fini-boom-fraise-5gr.png
-# friture-chocolat-lait-6,7gr.png
-# friture-chocolat-noir-6,7gr.png
+# friture-chocolat-lait-6-7gr.png
+# friture-chocolat-noir-6-7gr.png
 # fruit-shoot-multivitamine-teisseire-20cl.png
 # fruitella-pate-a-macher-fruits-4gr.png
 # galettes-bretonnes-au-beurre-x2-bio-15gr.png
@@ -211,19 +211,19 @@ candy_50.save
 # madeleine-maxi-bio-kercadelac-45gr.png
 # madeleine-maxi-nature-kercadelac-50gr.png
 # madeleine-moelleuse-extra-nature-kercadelac-25gr.png
-# maoam-bloxx-haribo-4,4gr.png
+# maoam-bloxx-haribo-4-4gr.png
 # medeleine-marbree-chocolat-kercadelac-25gr.png
 # medeleine-maxi-coeur-fraise-kercadelac-40gr.png
 # meringue-bio-10gr.png
 # mini-buneo-5-4gr.png
 # mini-cake-fruits-confits-kercadelac-30gr.png
-# mini-calisson-roy-rene-6,5gr.png
+# mini-calisson-roy-rene-6-5gr.png
 # mini-carambar-fruits-4gr.png
 # mini-kinder-country-5-3gr.png
 # mini-kit-kat-17gr.png
-# mini-maoma-bloxx-haribo-4,5gr.PNG
-# mini-napolitains-chocolat-lait-fairtrade-11,3gr.png
-# mini-papillote-malakoff-lait-amande-10,7gr.png
+# mini-maoma-bloxx-haribo-4-5gr.png
+# mini-napolitains-chocolat-lait-fairtrade-11-3gr.png
+# mini-papillote-malakoff-lait-amande-10-7gr.png
 # mini-pate-de-fruits-6gr.png
 # mini-pates-de-fruits-6gr.png
 # mini-pick-up-10-6gr.png
@@ -233,7 +233,7 @@ candy_50.save
 # mini-sachet-dragibus-hribo-10gr.png
 # mini-sachet-gelifies-15gr.png
 # mini-sachet-happy-cola-haribo-12gr.png
-# mini-sachet-ours-d'or-haribo-10gr.png
+# mini-sachet-ours-d-or-haribo-10gr.png
 # mini-sachet-pg-20gr-iletaitunefois.png
 # mini-sachet-pg-cumulonimbus.png
 # mini-sachet-starmix-haribo-25gr.png
@@ -246,24 +246,24 @@ candy_50.save
 # napolitain-sous-cello-30gr.png
 # oeuf-kinder-surprise-20gr.png
 # oeuf-surprise-kinder-20gr.png
-# oeufs-de-paques-sous-alu-7,5gr.png
-# oeufs-de-paques-sous-alu-12,5gr.png
+# oeufs-de-paques-sous-alu-7-5gr.png
+# oeufs-de-paques-sous-alu-12-5gr.png
 # oeufs-de-paques-sous-alu-20gr.png
 # ourson-guimauve-cemoi-12-7gr.png
 # ourson-or-reigelein-5gr.png
-# p'tit-carre-fraise-kercadelac-40gr.png
-# p'tit-fourre-chocolat-kercadelac-30gr.png
+# ptit-carre-fraise-kercadelac-40gr.png
+# ptit-fourre-chocolat-kercadelac-30gr.png
 # paille-dextrose-fluo-1-5gr.png
 # pailootines-x2-pur-beurre-bio-20gr.png
 # palet-breton-bio-kercadelac-15gr.png
 # palet-breton-pur-beurre-kercadelac-15gr.png
 # palmiers-x2-bio-75gr.png
-# papillote-3-assorties-lait-12,10gr.png
+# papillote-3-assorties-lait-12-10gr.png
 # papillote-boule-argentee-choco-lait-11gr.png
 # papillote-boule-chocolat-lait-10gr.png
 # papillote-double-praline-coeur-noisette-10gr.png
-# papillote-douceur-cereales-craquantes-8,2gr.png
-# papillote-eclat-cookies-chocolat-lait-9,6gr.png
+# papillote-douceur-cereales-craquantes-8-2gr.png
+# papillote-eclat-cookies-chocolat-lait-9-6gr.png
 # papillote-eclat-de-meringue-chocolat-lait-9,6gr.png
 # papillote-eclats-de-biscuit-11,3gr.png
 # papillote-gel-de-fruits-6gr.png
@@ -289,7 +289,7 @@ candy_50.save
 # sachet-bio-vegan-yumearth-20gr.png
 # sachet-guimauve-marshmallow-50gr.png
 # sachet-oursons-grenade-bio-20gr.png
-# sachet-p'tit-strudel-20gr.png
+# sachet-ptit-strudel-20gr.png
 # sachet-roller-fantaisie-20gr.png
 # sachet-schtroumpfs-haribo-40gr.png
 # sachet-tagada-haribo-30gr.png
@@ -305,7 +305,7 @@ candy_50.save
 # top-fruits-poudre-8gr.png
 # torsade-guimauve-6gr.png
 # tube-smarties-nestle-38gr.png
-# twist-&-drink-gout-fraise-20cl.png
+# twist-drink-gout-fraise-20cl.png
 # twix-x2-chocolat-lait-2x25gr.png
 # valisette-carton-decor-lapin.png
 
