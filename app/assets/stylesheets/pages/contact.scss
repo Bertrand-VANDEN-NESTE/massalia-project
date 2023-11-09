@@ -109,19 +109,24 @@
     height: auto;
   }
 
+  .background-vignette-profil {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .vignette-profil {
     margin: auto;
-    width: 60vw;
+    width: 80vw !important;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   .avatar-large {
-    width: 40vw;
-    height: 40vw;
+    width: 40vw !important;
+    height: 40vw !important;
   }
   .vignette-logo {
-    display: none;
+    display: none !important;
   }
 
   .vignette-logo-mobile {
