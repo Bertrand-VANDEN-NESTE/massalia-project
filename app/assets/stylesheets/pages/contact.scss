@@ -1,11 +1,12 @@
 .container-blocks-contact{
-  height: auto;
+  height: 85vh;
 
   .block-contact {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 80vw;
+    height: 42vh;
     margin: auto;
 
     .vignette-logo-mobile {
@@ -28,6 +29,8 @@
         backdrop-filter: blur(10px);
         border-radius: 10px 10px 0px 0px;
         background-color: $color-3;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         .avatar-large {
           width: 10vw;
@@ -44,11 +47,11 @@
       font-family: $font-2;
       color: $color-5;
       display: flex;
+      margin: auto;
       flex-direction: column;
       justify-content: space-evenly;
 
       span{
-        margin: 10px;
         padding: 10px;
       }
     }
@@ -65,6 +68,7 @@
 
   .text-contact {
     margin: 20px;
+    height: 42vh;
     text-align: center;
 
     span {
