@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 80vw;
+    padding-top: 50px;
     height: 42vh;
     margin: auto;
 
@@ -21,7 +22,7 @@
       text-align: center;
       backdrop-filter: blur(10px);
       border-radius: 10px;
-      margin-top: 50px;
+      height: auto;
       width: 20vw;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
@@ -50,9 +51,11 @@
       margin: auto;
       flex-direction: column;
       justify-content: space-evenly;
+      padding-top: 20px;
+      padding-bottom: 20px;
 
       span{
-        padding: 10px;
+        padding: 5px;
       }
     }
 
@@ -107,6 +110,7 @@
 @media screen and (max-width: 768px) {
   .block-contact {
     flex-direction: column !important;
+    height: auto !important;
   }
 
   .container-blocks-contact{
@@ -116,6 +120,10 @@
   .background-vignette-profil {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .text-contact {
+    height: auto !important;
   }
 
   .vignette-profil {
