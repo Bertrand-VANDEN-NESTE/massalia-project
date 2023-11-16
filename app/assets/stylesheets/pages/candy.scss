@@ -20,7 +20,7 @@
     .search-form-candy {
       display: flex;
       flex-direction: column;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
 
       input[type="text"] {
         width: 14vw;
@@ -36,12 +36,13 @@
       }
 
       input[type="submit"] {
-        width: 14vw;
+        width: 10vw;
         margin: auto;
         background-color: $color-1;
         color: $color-4;
         font-family: $font-2;
         padding: 8px;
+        font-size: x-small;
         border: none;
         border-radius: 25px;
         cursor: pointer;
@@ -62,7 +63,7 @@
 
           .btn-filtre-container {
             background-color: $color-4;
-            width: 14vw;
+            width: 17vw;
             font-size: x-small;
             margin: auto;
             color: $color-5;

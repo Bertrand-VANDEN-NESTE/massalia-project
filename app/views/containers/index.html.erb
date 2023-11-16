@@ -7,6 +7,19 @@
     <% end %>
     <%= form_tag containers_path, class: "form-search-category", method: :get do %>
       <div class="container-gallery-form">
+        <div class="form-search">
+          <button id="categoryDropdown" class="btn-filtre-container">Catégories</button>
+          <ul id="categoryOptions" class="category-options">
+            <% Container.distinct.pluck(:category).each do |category| %>
+              <li class="category-li">
+                <%= button_tag type: "button", class: "category-button", data: { category: category } do %>
+                  <%= category %>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+          <%= hidden_field_tag :category, params[:category] %>
+        </div>
         <div class="mobile-dropdown">
           <button id="categoryDropdown" class="btn-filtre-container">Catégories</button>
           <ul id="categoryOptions" class="category-options">
