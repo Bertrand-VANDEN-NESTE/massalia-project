@@ -12,5 +12,5 @@ document.addEventListener('DOMContentLoaded', function () {
       // Soumettre automatiquement le formulaire pour effectuer le filtrage
       categoryForm.submit();
     });
-  });e
+  });
 });

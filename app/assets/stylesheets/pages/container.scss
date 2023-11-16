@@ -167,81 +167,94 @@
 }
 @media screen and (max-width: 768px) {
 
-  .form-container {
-    width: 90vw !important;
-    margin: auto !important;
-  }
-
-  .gallery-container {
-    width: 40vw !important;
-  }
-
   .container-container {
-    flex-direction: column !important;
-  }
+    flex-direction: column;
 
-  .container-container button {
-    margin: 2px;
-    width: auto !important;
-  }
+    button {
+      margin: 2px;
+      width: auto;
+    }
 
-  .img-container {
-    height: 10vh !important;
-    width: 10vh !important;
-  }
+    .form-container {
+      width: 90vw;
+      margin: auto;
 
-  .container-size-img {
-    height: 10vh;
-    margin-top: 20px;
-  }
+      img {
+        display: none;
+      }
 
-  .category-li {
-    margin: 2px;
-  }
+      .search-form {
 
-  .search-form {
-    margin-bottom: 2px;
-  }
+        input[type="text"] {
+          width: 80vw;
+          margin: 10px;
+        }
 
-  .search-form input[type="text"] {
-    width: 80vw !important;
-    margin: 10px;
-  }
+        input[type="submit"] {
+          width: 80vw;
+        }
+      }
 
-  .search-form input[type="submit"] {
-    width: 80vw !important;
-  }
+      .form-search-category{
+        width: 90vw;
 
-  .form-search-category{
-    width: 90vw !important;
-  }
+        .container-gallery-form {
+          width: 90vw;
 
-  .btn-filtre-container {
-    width: auto !important;
-  }
+          .form-search {
+            
+            .btn-filtre-container {
+              width: auto;
+            }
 
-  .container-gallery-form {
-    width: 90vw !important;
-  }
+            .category-options {
 
-  .span-container-category {
-    font-size: x-small;
-    margin: 10px;
-  }
+              .category-li {
+                margin: 2px;
+              }
 
-  .span-container-name {
-    font-size: smaller;
-  }
+              .category-button {
 
-  .category-options-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 85vw;
-  }
+              }
+            }
+          }
+        }
+      }
+    }
 
-  .form-container img {
-    display: none;
-  }
+    .container-gallery-container {
 
+      .cards-gallery-container {
+
+        .gallery-container {
+          width: 40vw;
+
+          .container-size-img {
+            height: 10vh;
+            margin-top: 20px;
+
+            .img-container {
+              height: 10vh;
+              width: 10vh;
+            }
+          }
+          .container-size-text {
+
+            .span-container-name {
+              font-size: smaller;
+            }
+
+            .span-container-category {
+              font-size: x-small;
+              margin: 10px;
+            }
+
+            .span-container-dim {
+              font-size: x-small;
+            }
+          }
+        }
+      }
+    }
+  }
 }
