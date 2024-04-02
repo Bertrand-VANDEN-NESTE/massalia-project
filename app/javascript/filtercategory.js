@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const categoryInput = document.querySelector('.form-search-category input[name="category"]');
   const categoryForm = document.querySelector('.form-search-category');
 
-
   categoryButtons.forEach(function (button) {
     button.addEventListener('click', function () {
       // Obtenir la catégorie sélectionnée et la soumettre au formulaire

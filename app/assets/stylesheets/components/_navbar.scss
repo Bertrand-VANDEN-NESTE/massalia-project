@@ -6,7 +6,7 @@
   background-color: $color-2;
   z-index: 100;
   width: 100vw;
-  height: 8vh;
+  height: 10vh;
   display: flex;
   flex-grow: 2;
   justify-content: space-between;
@@ -24,12 +24,17 @@
       padding-right: 20px;
 
       img {
-        width: 56px;
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: $color-4;
+        border-radius: 100%;
+        border: 1px solid $color-1;
       }
     }
 
     .burger-icon {
-
       .bar {
         width: 25px;
         height: 3px;
@@ -80,6 +85,8 @@
 @media screen and (max-width: 768px) {
 
   .navbar {
+    height: 10vh;
+
     .container {
       flex-direction: row;
 
@@ -87,6 +94,11 @@
         width: 90vw;
         padding-left: 20px;
         padding-right: 20px;
+
+        img {
+          margin-top: 10px;
+          margin-bottom: 10px
+        }
       }
 
       .burger-icon.active .bar:nth-child(1) {
@@ -109,7 +121,7 @@
           flex-direction: row;
           background-color: $color-3;
           position: absolute;
-          top: 53px;
+          top: 76px;
           left: 0;
           width: 100%;
           padding-bottom: 10px;
@@ -133,7 +145,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .burger-icon {
     display: none;
   }
