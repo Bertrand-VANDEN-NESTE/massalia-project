@@ -50,3 +50,13 @@ input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
+
+.phone {
+  position: sticky;
+  bottom: 10vh;
+  left: 90vw;
+
+  img {
+    width: 7vw;
+  }
+}

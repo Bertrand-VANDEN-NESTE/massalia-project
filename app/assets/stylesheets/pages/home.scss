@@ -1,67 +1,81 @@
 @import "variable";
 
 .container-blocks {
+  width: 100vw;
+
+  .news-banner {
+    display: flex;
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    flex-direction: row;
+    overflow: scroll;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    .cards-gallery-news {
+      position: relative;
+      padding-left: 20px;
+      padding-right: -20px;
+
+      .gallery-news {
+        width: 6vw;
+
+        .img {
+          width: 10vh;
+          height: 10vh;
+        }
+
+        .img-news {
+          position: absolute;
+          width: 4vh;
+          height: 4vh;
+          margin-left: -20%;
+          margin-top: -10%;
+        }
+      }
+    }
+  }
+
   .banner {
     display: flex;
     width: 100vw;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
     padding-bottom: 50px;
 
-    .carousel {
-      width: 50%;
-      position: relative;
-
-      .carousel-container {
-        display: flex;
-        width: 100%;
-        margin: auto;
-        transition: transform 0.5s ease-in-out;
-
-        .carousel-slide {
-          display: flex;
-          justify-content: center;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          top: 10%;
-          left: 0;
-          opacity: 0;
-          transition: opacity 0.2s ease-in-out;
-
-          img {
-            width: 50vh;
-            height: 50vh;
-            object-fit: contain;
-          }
-        }
-
-        .slide-in-left {
-          animation: slideInLeft 1s ease-in-out forwards;
-        }
-
-        .slide-out-right {
-          animation: slideOutRight 1s ease-in-out forwards;
-        }
-      }
-    }
-
     .container-text {
-      width: 50%;
+      width: 80vw;
       text-align: center;
       margin: auto;
-      padding: 50px;
+      margin-top: 20px;
 
-      .logo {
+      .logo-animation {
         width: 20vw;
+        height: 20vw;
+        position: relative;
         padding-bottom: 20px;
         margin: auto;
+
+        .logo {
+          position: absolute;
+          left: 0;
+          top: 30px;
+        }
+
+        .logo-1 {
+          -webkit-animation: logo-move 1s both;
+          animation: logo-move 1s both;
+        }
+
+        .logo-3 {
+          -webkit-animation: logo-move 2.5s both;
+          animation: logo-move 2.5s both;
+        }
       }
 
-      h1 {
-        font-size: 1.3rem;
+      .accroche {
+        font-size: 2rem;
         color: $color-1;
         text-transform: uppercase;
         text-align: center;
@@ -80,18 +94,20 @@
   }
 
   .collab {
-    width: 100%;
+    width: 100vw;
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: $color-3;
+    background-image: url('background/baptiste-buisson-PxV_-NDeEys-unsplash.jpg');
+    background-blend-mode: lighten;
+    background-size: cover;
 
     h2 {
       font-size: 2rem;
       color: $color-1;
       text-transform: uppercase;
       text-align: center;
-      font-family: $font-1;
-      padding-top: 30px;
+      font-family: $font-2;
       padding-bottom: 30px;
     }
 
@@ -106,22 +122,15 @@
 
     .collab-logos {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       padding-left: 20%;
       padding-right: 20%;
 
       .collab-logos-container {
-        border-radius: 50%;
-        width: 10vw;
-        height: 10vw;
-        margin: auto;
-        padding: 10px;
-        background-color: $color-4;
-
         img {
-          height: 9vw;
-          width: 9vw;
+          height: 15vw;
+          width: 15vw;
           object-fit: contain;
           display: block;
           margin: auto;
@@ -132,12 +141,14 @@
 
   .collab-populaire {
     display: flex;
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
 
     img {
+      width: 15vw;
       margin: auto;
     }
 
@@ -146,8 +157,7 @@
       color: $color-1;
       text-transform: uppercase;
       text-align: center;
-      font-family: $font-1;
-      padding-top: 30px;
+      font-family: $font-2;
       padding-bottom: 30px;
     }
 
@@ -158,34 +168,6 @@
       text-align: center;
       color: $color-5;
     }
-  }
-}
-
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-  }
-
-  2% {
-    opacity: 0.4;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideOutRight {
-  0% {
-    opacity: 1;
-  }
-
-  2% {
-    opacity: 0.2;
-  }
-
-  100% {
-    opacity: 0;
   }
 }
 
@@ -207,11 +189,6 @@
     width: 80vw;
     text-align: center;
     margin: auto;
-    padding: 0;
-  }
-
-  .logo {
-    width: 40vw !important;
   }
 
   .carousel-container {
@@ -242,9 +219,22 @@
 
 @media screen and (max-width: 500px) {
 
+  .gallery-news {
+    width: 14vw !important;
+}
+  .logo-animation {
+    width: 40vw !important;
+    height: 40vw !important;
+  }
+
+  .accroche {
+    font-size: 1rem !important;
+  }
+
   .carousel-container {
     height: 36vh;
   }
+
   .carousel-slide {
     height: 35vh !important;
   }
@@ -254,9 +244,12 @@
     width: 35vh !important;
   }
 
-  .collab h2 {
-    width: 90vw !important;
-    margin: auto !important;
+  .collab {
+    h2 {
+      font-size: 1rem !important;
+      width: 80vw !important;
+      margin: auto !important;
+    }
   }
 
   .collab-logos-container {
@@ -266,6 +259,17 @@
     img {
       height: 24vw !important;
       width: 24vw !important;
+    }
+  }
+
+  .collab-populaire {
+
+    h2 {
+      font-size: 1rem !important;
+    }
+
+    img {
+      width: 50vw;
     }
   }
 }

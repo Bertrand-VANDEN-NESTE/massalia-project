@@ -1,13 +1,17 @@
 class CandysController < ApplicationController
   def index
-    if params[:search]
+    @candys = Candy.all
+
+    if params[:search].present?
       @candys = Candy.where('name LIKE ?', "%#{params[:search]}%")
+    end
 
-    elsif params[:category]
+    if params[:newproduct].present? && params[:newproduct] == 'true'
+      @candys = @candys.where(newproduct: 'true')
+    end
+
+    if params[:category].present?
       @candys = Candy.where(category: params[:category])
-
-    else
-      @candys = Candy.all
     end
   end
 end

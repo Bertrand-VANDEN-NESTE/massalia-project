@@ -5,11 +5,17 @@
       <%= text_field_tag :search, params[:search], placeholder: "Rechercher une confiserie" %>
       <%= submit_tag "Rechercher" %>
     <% end %>
+
     <%= form_tag candys_path, class: "form-search-category", method: :get do %>
       <div class="container-gallery-form">
         <div class="mobile-dropdown">
-          <button id="categoryDropdown" class="btn-filtre-container">Catégories</button>
           <ul id="categoryOptions" class="category-options-candy">
+            <li class="category-li-candy">
+              <%= button_tag type: "button", class: "category-button bl-txt", data: { newproduct: 'true' } do %>
+                Nouveaux Produits
+              <% end %>
+              <%= hidden_field_tag :newproduct, params[:newproduct] %>
+            </li>
             <% Candy.distinct.pluck(:category).each do |category| %>
               <li class="category-li-candy">
                 <%= button_tag type: "button", class: "category-button", data: { category: category } do %>

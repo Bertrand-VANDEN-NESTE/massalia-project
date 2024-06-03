@@ -1,4 +1,5 @@
 class Container < ApplicationRecord
+  self.table_name = 'containers'
   # Les colonnes dans la table "containers"
   # t.string "name"
   # t.string "category"

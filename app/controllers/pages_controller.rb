@@ -1,6 +1,9 @@
 class PagesController < ApplicationController
 
-  def home; end
+  def home
+    @candys = Candy.where(newproduct: 'true')
+    @containers = Container.where(newproduct: 'true')
+  end
 
   def contact; end
 

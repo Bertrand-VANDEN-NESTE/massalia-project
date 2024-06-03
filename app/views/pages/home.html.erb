@@ -1,36 +1,44 @@
 <div class="container-blocks">
-  <div class="banner">
-    <div class="carousel">
-      <div class="carousel-container">
-        <div class="carousel-slide slide-in-left">
-          <%= image_tag('coffret/BOITE_LSM_COUVERCLE.png', alt: 'boîte LSM couvercle') %>
+  <% if @candys.any? %>
+    <div class="news-banner">
+      <% @candys.each do |candy| %>
+        <div class="cards-gallery-news">
+          <div class="gallery-news">
+            <%= image_tag "logos/icons8-nouveau-64.png", class: "img-news", alt:"#{candy.tag}" %>
+            <%= image_tag "confiseries/#{candy.img}", class: "img", alt:"#{candy.tag}" %>
+          </div>
         </div>
-        <div class="carousel-slide slide-out-right">
-          <%= image_tag('coffret/BOITE_LSM_INTERIEUR.png', alt: 'boîte LSM intèrieur') %>
-        </div>
-      </div>
+      <% end %>
     </div>
-    <div class="container-text">
-      <%= image_tag "logos/SaMass-Full-Color.svg", class:"logo"%>
-      <h1>Colis Gastronomiques ! Goûters de Noël ! Objets Publicitaires ! Cadeaux !</h1>
-      <h2>Bienvenue chez Massalia, une entreprise passionnée par la création de délicieux goûters artisanaux en partenariat avec des Établissements et Services d'Aide par le Travail (ESAT). Notre entreprise allie la gourmandise à l'inclusion sociale, offrant une expérience unique à nos clients tout en favorisant l'emploi des personnes en situation de handicap.</h2>
+  <% else %>
+  <% end %>
+  <div class="banner">
+    <div id="container-text" class="container-text">
+      <div class="logo-animation">
+        <%= image_tag "logos/SaMass-Full-Color-1.svg", class:"logo logo-1"%>
+        <%= image_tag "logos/SaMass-Full-Color-2.svg", class:"logo logo-3"%>
+        <%= image_tag "logos/SaMass-Full-Color-3.svg", class:"logo logo-3"%>
+        <%= image_tag "logos/SaMass-Full-Color-4.svg", class:"logo logo-3"%>
+      </div>
+      <h1 class="accroche animation-txt">Colis Gastronomiques ! Goûters de Noël ! Objets Publicitaires ! Cadeaux !</h1>
+      <h2 class="animation-txt">Bienvenue chez Massalia, une entreprise passionnée par la création de délicieux goûters artisanaux en partenariat avec des Établissements et Services d'Aide par le Travail (ESAT). Notre entreprise allie la gourmandise à l'inclusion sociale, offrant une expérience unique à nos clients tout en favorisant l'emploi des personnes en situation de handicap.</h2>
     </div>
   </div>
   <div class="collab">
-    <h2>Nos collaborateurs</h2>
+    <h2 class="animation-txt">Nos collaborateurs</h2>
     <div class="collab-logos">
       <div class="collab-logos-container" >
-        <%= image_tag "logos/logo_ari_1.png" %>
+        <%= image_tag "logos/logo_ari_1.png", class:"logo-animation" %>
       </div>
       <div class="collab-logos-container">
-        <%= image_tag "logos/logo_unapei_1.png" %>
+        <%= image_tag "logos/logo_unapei_1.png", class:"logo-animation" %>
       </div>
     </div>
-    <p>Chez Massalia, nous croyons en la puissance de la diversité et de l'inclusion. C'est pourquoi nous avons établi des partenariats solides avec des ESAT locaux, qui sont des structures dédiées à l'accompagnement et à la formation professionnelle de personnes en situation de handicap. Grâce à ces partenariats, nous avons la chance de travailler avec des artisans talentueux qui apportent leur savoir-faire unique à la création de nos goûters exceptionnels.</p>
+    <p class="animation-txt">Chez Massalia, nous croyons en la puissance de la diversité et de l'inclusion. C'est pourquoi nous avons établi des partenariats solides avec des ESAT locaux, qui sont des structures dédiées à l'accompagnement et à la formation professionnelle de personnes en situation de handicap. Grâce à ces partenariats, nous avons la chance de travailler avec des artisans talentueux qui apportent leur savoir-faire unique à la création de nos goûters exceptionnels.</p>
   </div>
   <div class="collab-populaire">
-    <h2>Chez nous pas de gaspillage</h2>
-    <%= image_tag "logos/logo_secours_populaire.png" %>
-    <p>Chaque fin d’année nous redistribuons gracieusement les confiseries invendues et en faisons don au Secours Populaire et divers Comités d’Entreprises qui peuvent ainsi organiser des loteries pour leur personnel.</p>
+    <h2 class="animation-txt">Chez nous pas de gaspillage</h2>
+    <%= image_tag "logos/logo_secours_populaire.png", class:"logo-animation" %>
+    <p class="animation-txt">Chaque fin d’année nous redistribuons gracieusement les confiseries invendues et en faisons don au Secours Populaire et divers Comités d’Entreprises qui peuvent ainsi organiser des loteries pour leur personnel.</p>
   </div>
 </div>
